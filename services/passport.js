@@ -22,7 +22,8 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: "/auth/google/callback",
+      callbackURL:
+        "https://young-cliffs-00798.herokuapp.com/auth/google/callback",
       proxy: true,
     },
     (accessToken, refreshToken, profile, done) => {
