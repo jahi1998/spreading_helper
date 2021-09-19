@@ -1,7 +1,6 @@
 const keys = require('../config/keys');
-const stripe = reqire('stripe')(keys.stripeSecretKey);
+const stripe = require('stripe')(keys.stripeSecretKey);
 
-
-moudle.exports = (app) => {
-  app.post("/api/stripe", (req, res) => {});
+module.exports = (app) => {
+  app.post('/api/stripe', (req, res) => {});
 };
